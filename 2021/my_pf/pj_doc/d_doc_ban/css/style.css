@@ -1,0 +1,386 @@
+ html {
+  /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body, ul, li, h1, h2, h3, p {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+label[for] {
+  cursor:pointer;
+  user-select:none;
+}
+
+*{ 
+    box-sizing: border-box;
+}
+
+/*lib*/
+.con {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.row::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.cell {
+  float:left;
+  box-sizing:border-box;
+}
+
+.img-box > img {
+  width:100%;
+  display:block;
+}
+
+.border-red {
+  border:4px solid red;
+}
+
+.border-pink {
+  border:4px solid pink;
+}
+
+.border-blue {
+  border:4px solid blue;
+}
+
+.border-green {
+  border:4px solid green;
+}
+
+.border-black {
+  border:4px solid black;
+}
+
+.border-gold {
+  border:4px solid gold;
+}
+
+.flex {
+  display:flex;
+}
+
+.flex-wrap {
+  flex-wrap:wrap;
+}
+
+.flex-jc-e {
+  justify-content:flex-end;
+}
+
+.flex-jc-s {
+  justify-content:flex-start;
+}
+
+.flex-jc-c {
+  justify-content:center;
+}
+
+.flex-jc-sb {
+  justify-content:space-between;
+}
+
+.flex-ai-c {
+  align-items:center;
+}
+
+.flex-as-c{
+  align-self:center;
+}
+
+.flex-grow-1{
+  flex-grow:1;
+}
+
+.height-100p {
+  height:100%;
+}
+
+.block {
+  display:block;
+}
+
+.relative{
+   position:relative;
+}
+.overflow-hidden{
+  overflow:hidden;
+}
+.text-align-center{
+  text-align:center;
+}
+
+/*cus*/
+.con{
+  width:1850px;
+}
+
+.con-min-width{
+  min-width:1850px;
+}
+
+body{
+    background-color: #fafafa;
+}
+
+
+/*에스코어드림 헤비*/
+@font-face {
+    font-family: 'S-CoreDream-8Heavy';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*에스코어드림 레귤러*/
+@font-face {
+     font-family: 'S-CoreDream-4Regular';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+#main_wrap{
+     background: url(../img/bg_top.jpg) repeat-x;
+}
+
+/*헤더*/
+#header{
+    position: fixed;
+    top:10%;
+    right:80px;
+    z-index:99;
+    width:80px;
+}
+#header .hd_bg{
+    background-color: white;
+    width:80px;
+    height: 280px;
+    box-shadow: 0 0 10px 0 gray;
+    border-radius: 50px;
+}
+/*햄버거 메뉴*/
+#header .ham_btn{
+    display: block;
+    position: relative;
+    top:50px;
+    left:50%;
+    transform: translateX(-50%);
+    width:100%;
+    height:60px;
+}
+/*햄버거 메뉴*/
+#header>div{
+    width:80px;
+    height:80px;
+
+}
+/*액티브*/
+#header .ham_btn.active span:nth-child(1),#header .ham_btn.active span:nth-child(4){
+    opacity: 0;
+}
+
+#header .ham_btn.active span:nth-child(2){
+    transform: rotate(45deg);
+}
+
+#header .ham_btn.active span:nth-child(3){
+    transform: rotate(-45deg);
+}
+/*햄버거 스판*/
+#header .ham_btn span{
+ position: absolute;
+  left: 0;
+  width: 100%;
+  height: 9px;
+  background-color: black;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+#header .ham_btn:hover span{
+    background-color: rgba(0,55,200);
+}
+#header .ham_btn span:nth-child(1){
+     top: 0;
+}
+#header .ham_btn span:nth-child(2),#header .ham_btn span:nth-child(3){
+    top:50%;
+    transform: translateY(-50%);
+}
+#header .ham_btn span:nth-child(4){
+    bottom:0;
+}
+/*설명*/
+#header .hd_bg li{
+    position: relative;
+    width:100%;
+}
+
+#header .hd_bg li>p{
+    position: absolute;
+    top:50%;
+    left:-215px;
+    transform:translateY(-50%);
+    width:200px;
+    color:#737373;
+    display: none;
+    z-index:3;
+    text-align: right;
+    font-size:1.5rem;
+}
+#header .hd_bg li:hover>p{
+    display: block;
+}
+
+/*아이콘*/
+#header .hd_bg a{
+    position: relative;
+    z-index:5;
+}
+#header .hd_bg a>i{
+    padding:20px 30px;
+    font-size:4rem;
+    color:#737373;
+    width: 80px;
+    
+}
+#header .hd_bg a:hover>i{
+    color:rgba(0,55,200);
+}
+#header .hd_bg .go_main>i{
+    font-size:2.1rem;
+    margin-left:-5px;
+}
+
+#header .hd_bg .before_go i{
+    margin-left:-5px;
+}
+/*이전,다음*/
+
+#header .before_go{
+   opacity: 0.2;
+pointer-events: none;
+}
+
+
+/*탑 메인*/
+#main_box{
+    background-color: white;
+    width:100%;
+    height:350px;
+    position: relative;
+    top:30px;
+    overflow: hidden;
+}
+
+/*탑메인 텍스트*/
+#main_box .main_txt{
+    margin-top:130px;
+    margin-left:100px;
+    position: relative;
+}
+
+#main_box .main_txt>p{
+    font-size: 1.78rem;
+    margin-top:10px;
+     font-family: 'S-CoreDream-4Regular';
+    position: relative;
+    z-index:2;
+}
+
+#main_box .main_txt>div{
+    width:340px;
+    height:25px;
+    background-color: #91a8db;
+    position: absolute;
+    top:18px;
+    left:20px;
+    z-index:1;
+}
+#main_box .main_txt>h1{
+    font-family: 'S-CoreDream-8Heavy';
+    font-size:4.5rem;
+}
+/*섹션-왼쪽 박스*/
+#s_left{
+    position: absolute;
+    font-family: 'S-CoreDream-8Heavy';
+    top:0;
+    left:100px;
+    color:#91a8db;
+}
+#s_left>h1{
+    position: relative;
+    font-size:2.5rem;
+}
+#s_left>h1::after{
+    content:"";
+    width:150px;
+    height:2px;
+    background-color: #5d5d5d;
+    position: absolute;
+    bottom: 15px;
+    left:80px;
+}
+
+#s_left>p{
+    font-size: 1.8rem;
+    white-space:nowrap;   
+}
+
+#s_left>.sub_p{
+    font-size:1.5rem;
+    color: #565656;
+    font-family: 'S-CoreDream-4Regular';
+}
+/*섹션 오른쪽 박스*/
+.s_box .s_right{
+    margin:100px 0;
+    padding-top:110px;
+}
+.s_box .s_right>.img-box{
+    width:1300px;
+    margin:0 100px;
+}
+/*컨셉 설명 박스*/
+.s_box .concept{
+    width:100%;
+    background-color: white;
+    padding:20px 0;
+}
+
+.s_box .concept .cc_con{
+    margin:0 auto;
+    max-width:1700px;
+    padding:0 100px;
+}
+.s_box .concept .cc_con>h2{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+.s_box .concept .cc_con>p{
+    line-height: 35px;
+    font-size: 1.3rem;
+}
+/*footer*/
+#footer{
+    padding: 80px 0;
+    background-color: #dfdfdf;
+    margin-top:80px;
+}
+#footer h1{
+    text-align: center;
+    font-size:3rem;
+}

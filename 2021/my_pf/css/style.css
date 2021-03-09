@@ -476,38 +476,101 @@ h1,h2,h3,p{
 /*웍스*/
 #contents #works{
     width:100%;
-/*    height:1750px;*/
+    height:2200px;
     position: relative;
-/*    background-color: aliceblue;*/
+    background-color: aliceblue;
 }
-
-#contents #works .web_works{
-    padding:80px
-}
- 
 
 /*텍스트 글씨*/
 #contents #works .works_txt{
-    text-align: center;
     z-index: 9;
+    position: relative;
 }
-
+#contents #works .works_txt::after{
+    content:"";
+    width:100%;
+    height:1px;
+    background-color: #dfdfdf;
+    position: absolute;
+    bottom:0;
+    right:0;
+}
 #contents #works .works_txt>h3{
     background-color: white;
-    padding:10px 30px;
-    font-size:2rem;
+    padding:10px 20px;
+    font-size:2.2rem;
+    background-color: rgba(0,55,200);
+    color:white
 }
 #contents #works .works_txt>p{
     font-size:1.5rem;
+    margin:0 20px;
 }
 
+#contents #works .works_con{
+    padding:80px
+}
 
+/*전체 보기 박스 타이틀*/
+#contents #works .all_con{
+    font-size:2rem;
+}
+
+/*웹디자인 박스*/
+#contents #works .wb_con{
+    margin-top:30px;
+}
+#contents #works .wb_con a:first-child{
+    margin-left:0px;
+}
+#contents #works .wb_con a:last-child{
+    margin-right:0px;
+}
+#contents #works .wb_box .wb_go_site{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(20,20,20);
+    opacity: 0.8;
+    display: none;
+}
+#contents #works .wb_box .wb_go_site h3{
+    color:white;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translateX(-50%);
+    font-size:1.7rem;
+    
+}
+#contents #works .wb_box{
+    width:calc(100%/3);
+    margin:0 10px;
+    position: relative;
+}
+#contents #works .wb_box:hover .wb_go_site{
+    display: block;
+    transition: all 0.4s;
+}
+#contents #works .wb_box p{
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 15px 0;
+    background-color: rgba(250,250,250);
+    font-weight:bold;
+    
+}
+#contents #works .etc_works{
+    margin-top:-80px;
+}
 /*작업물 슬라이드*/
 #contents #works .works_slide{
-    max-width:1700px;
+    width:100%;
     margin:0 auto;
     position: relative;
-    padding-top:20px;
+    margin:30px 0;
 }
 
 
@@ -595,7 +658,7 @@ h1,h2,h3,p{
 }
 
 #contents #works .works_slide .slick-prev, #contents #works .works_slide .slick-next{
-    top:70px;
+    top:55px;
 }
 
 #contents #works .works_slide .slick-prev:before, #contents #works .works_slide .slick-next:before{
@@ -603,6 +666,7 @@ h1,h2,h3,p{
     font-size:50px;
     line-height: 0;
     padding: 0 18px;
+    padding-bottom: 10px;
 }
 
 
@@ -611,6 +675,7 @@ h1,h2,h3,p{
 /*컨택트*/
 #contents #contact{
      width:100%;
+    position: relative;
 }
 
 #contents #contact .ch_img{

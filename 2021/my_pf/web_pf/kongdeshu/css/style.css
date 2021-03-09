@@ -1,0 +1,582 @@
+html {
+  /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body, ul, li, h1, h2, h3, h4, p {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+label[for] {
+  cursor:pointer;
+  user-select:none;
+}
+
+*{ 
+    box-sizing: border-box;
+}
+
+/*lib*/
+.con {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.row::after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.cell {
+  float:left;
+  box-sizing:border-box;
+}
+
+.img-box > img {
+  width:100%;
+  display:block;
+}
+
+.border-red {
+  border:4px solid red;
+}
+
+.border-pink {
+  border:4px solid pink;
+}
+
+.border-blue {
+  border:4px solid blue;
+}
+
+.border-green {
+  border:4px solid green;
+}
+
+.border-black {
+  border:4px solid black;
+}
+
+.border-gold {
+  border:4px solid gold;
+}
+
+.flex {
+  display:flex;
+}
+
+.flex-wrap {
+  flex-wrap:wrap;
+}
+
+.flex-jc-e {
+  justify-content:flex-end;
+}
+
+.flex-jc-s {
+  justify-content:flex-start;
+}
+
+.flex-jc-c {
+  justify-content:center;
+}
+
+.flex-jc-sb {
+  justify-content:space-between;
+}
+
+.flex-ai-c {
+  align-items:center;
+}
+
+.flex-as-c{
+  align-self:center;
+}
+
+.flex-grow-1{
+  flex-grow:1;
+}
+
+.height-100p {
+  height:100%;
+}
+
+.block {
+  display:block;
+}
+
+.relative{
+   position:relative;
+}
+.overflow-hidden{
+  overflow:hidden;
+}
+.text-align-center{
+  text-align:center;
+}
+/*cus*/
+.con{
+  width:1920px;
+}
+
+.con-min-width{
+  min-width:1920px;
+}
+
+/*cus*/
+#main_wrap{
+    margin: 0 auto;
+    padding: 0px;
+}
+
+#contents>section{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+/*헤더*/
+#header{
+    width:100%;
+    position: fixed;
+    top:10px;
+    z-index: 22;
+}
+/*로고*/
+#header>.logo_box .logo{
+
+   padding:0 30px;
+    
+}
+#header>.logo_box img{
+   width: 150px;
+}
+
+
+/*메뉴*/
+#header .menu_bar{
+    position: relative;
+}
+
+#header .menu_bar ul{
+   z-index:15; 
+}
+#header .menu_bar ul>li{
+    position: relative;
+    font-size:1.3rem;
+    
+}
+/*li 마지막 밀어주기*/
+#header .menu_bar ul>li:last-child{
+    margin-right:30px;    
+}
+#header .menu_bar ul>li{
+    font-weight: bold;
+}
+#header .menu_bar ul>li.on>a::after{
+    width:100%;
+}
+#header .menu_bar ul>li>a{
+    padding:30px;
+    display: block;
+}
+#header .menu_bar ul>li>a::after{
+    content: "";
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translatey(-50%);
+    background-color: rgba(255,205,35);
+    width:0;
+    height:30px;
+    border-radius: 15px;
+    z-index:-1;
+    transition: all 0.2s;
+}
+/*홈*/
+#home{
+    position: relative;
+    overflow: hidden;
+    
+}
+/*메인 이미지슬라이드*/
+#home .imgslide .slider_content{
+    height: 100vh;
+}
+
+#home .home_txt{
+    position: absolute;
+    top:300px;
+    left:200px;
+    color:white;
+}
+
+#home .home_txt>p{
+   font-size:2.8rem;
+    text-align: center;
+}
+#home .home_txt>a{
+    position: relative;
+    z-index:10;
+    border:3px solid white;
+    border-radius: 50px;
+    margin-top:25px;
+    z-index:10;
+}
+#home .home_txt>a::after{
+    content:"";
+    width:425px;
+    height:35px;
+    position: absolute;
+    padding:10px;
+    border-radius: 40px;
+    background-color: white;
+    opacity: 0.2;
+    z-index:-1;
+}
+#home .home_txt .main_kong{
+    margin-top:15px;
+    width:450px;
+}
+#home .home_txt>a:hover::after{
+    background-color: green;
+    transition: all 0.4s;
+}
+#home .home_txt>a>p{
+    display: block;
+    font-size:1.5rem;
+    padding:10px;
+}
+
+#home .home_txt>a .st_icon{
+    width:35px;
+    margin-right:10px;
+}
+
+/*브랜드 소개*/
+#intro_brand{
+    position: relative;
+}
+#intro_brand .con{
+    z-index:5;
+}
+/*세로 콩박스*/
+#intro_brand .vertical_kong{
+    width:6%;
+    height:100%;
+    background-color: #ffe6c8;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#intro_brand .vertical_kong .img-box{
+    width:68px;
+}
+
+/*콩드슈 소개 글*/
+#intro_brand .kong_intro{
+    width:47%;
+    height:100%;
+    padding: 375px 0 0 325px;
+    opacity: 0;
+    z-index:5;
+}
+
+#intro_brand .kong_intro .img-box{
+     width:350px; 
+     margin-left: 70px;
+}
+#intro_brand .kong_intro h3{
+    font-size: 1.8rem;
+    margin: 40px 0;
+}
+#intro_brand .kong_intro p{
+    font-size:1.42rem;
+    line-height:2.2rem;
+}
+
+/*콩드슈 매장 사진*/
+
+#intro_brand .kong_store{
+    width:47%;
+    height:100%;
+    position: relative;
+    padding: 255px 0 0 240px;
+    z-index:5;
+}
+#intro_brand .kong_store .bean{
+    position: absolute;
+    top:0;
+    left:0;
+    width:200px;
+    z-index:1;
+} 
+#intro_brand .kong_store .bean1{
+    top: 175px;
+    left: 627px;
+}
+#intro_brand .kong_store .bean>img:hover{
+    transform: rotate(45deg);
+    transition: all 0.3s;
+}
+#intro_brand .kong_store .bean2{
+    top: 630px;
+    left: 110px;
+}
+#intro_brand .kong_store .store{
+    width:500px;
+    z-index:3;
+    position: relative;
+    
+}
+
+/*제품보기*/
+#products{
+    position: relative;
+}
+/*베이지 배경*/
+#contents .yellow_bg{
+    width: 100%;
+    height: 630px;
+    background-color: #fff7e0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+/*왼쪽 큰이미지*/
+#products .pro_l{
+    margin: 150px 0 0 105px;    
+}
+#products .pro_l .big_img{
+    position: relative;
+    width:700px;
+}
+#products .pro_l>p{
+    color:#BEBEBE;
+    font-size:1.4rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#products .pro_l .img-box{
+    width:550px;
+}
+
+/*오른쪽 설명 및 이미지 슬라이드*/
+#products .pro_r{
+    margin-top:200px;
+    margin-left:50px;
+}
+/*콩자 캐릭터*/
+#products .pro_r .pro_txt>.img-box{
+    width:80px;
+    margin:0 20px;
+}
+/*콩부각 타이틀*/
+#products .pro_r .pro_txt{
+    margin-left:30px;
+}
+#products .pro_r .pro_txt h2{
+    background-color: #fecf4f;
+    font-size:2.5rem;
+    color:white;
+    padding: 10px 15px;
+    margin-top:5px;
+}
+#products .pro_r .pro_txt h3{
+    font-size: 1.7rem;
+    margin:10px 0;
+    text-align: center;
+}
+#products .pro_r .pro_txt ul{
+    font-size:1.6rem;
+    margin-top:30px;
+}
+#products .pro_r .pro_txt ul>li{
+    padding:10px 0;
+}
+/*제품 이미지 슬라이드*/
+#products .pro_r .pro_imgslide{
+    width:1000px;
+    margin-top:116px;
+}
+#products .pro_r .pro_imgslide .slider_content{
+    padding:10px;
+}
+
+/*갤러리*/
+/*갤러리 왼쪽*/
+#gallery .gal_l{
+    margin:0 70px;
+    margin-top:180px;
+}
+#gallery .gal_l .txt{
+    position: relative;
+    
+}
+#gallery .gal_l .txt>h3{
+    color:#828282;
+    font-size:2rem;
+    z-index:99;
+}
+#gallery .gal_l .txt .with_kong{
+    position: absolute;
+    top: -23px;
+    left: -19px;
+    width: 300px;
+    z-index:-1;
+    opacity: 0.7;
+}
+#gallery .gal_l .go_insta{
+    width:230px;
+    margin-top:300px;
+    margin-bottom: 10px;
+}
+/*갤러리 오른쪽*/
+
+#gallery .gal_r{
+   max-width:1550px;
+   flex-wrap : wrap;
+    align-content: flex-end;
+    margin-top:350px;
+    opacity: 0;
+}
+#gallery .gal_r .gal_img{
+    width:20%;
+    padding:10px 10px;
+}
+
+/*오시는 길*/
+#way_to_come{
+    position: relative;
+}
+#way_to_come .yellow_bg{
+    width:43%;
+    height:100%;
+    position: absolute;
+    top:0;
+    right:0;
+    left:auto;
+    opacity: 0.5;
+}
+/*오시는 길 왼쪽*/
+#way_to_come .map{
+    width: 1000px;
+    padding: 120px 0 0 100px;
+    opacity: 0;
+}
+
+/*오시는 길 오른쪽*/
+#way_to_come .way_r{
+    padding:250px 0 0 200px;
+}
+
+#way_to_come .way_r>p{
+    font-size:1.8rem;
+    background-color: #fecb28;
+    color:white;
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+#way_to_come .way_r h3{
+    font-size:2.8rem;
+    margin: 20px 0;
+    text-align: center;
+}
+#way_to_come .way_r ul{
+    font-size:1.5rem;
+}
+#way_to_come .way_r .way_r_sub>ul>li{
+    padding: 10px 0;
+    height: 100px;
+    font-size:1.6rem;
+}
+#way_to_come .way_r .way_r_sub>ul:first-child{
+    margin-right:50px;
+    font-weight:bold;
+}
+#way_to_come .way_r .way_r_sub .icon>li{
+    font-size:5rem;
+    padding-right: 60px;
+}
+#way_to_come .way_r .way_r_sub .icon>li>i{
+    color:#4a4949;
+    position: relative;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+}
+#way_to_come .way_r .way_r_sub .icon>li>p{
+    font-size:1.7rem;
+    text-align: center;
+    margin-top:20px;
+}
+/*푸터*/
+#footer{
+    width: 100%;
+    height:310px;
+    background-color: #cccccc;
+    font-size:1.5rem;
+    line-height: 40px;
+    color:#5b5b5b;
+}
+#footer .footer_l{
+    width:70%;
+    position: relative;
+}
+#footer .footer_l .logo{
+    width: 100%;
+    margin:30px 0;
+}
+#footer .footer_l .logo::after{
+    content:"";
+    width:2px;
+    height:280px;
+    position: absolute;
+    top:18px;
+    right:0;
+    background-color:#5b5b5b;
+}
+#footer .footer_l .logo>img{
+    width:250px;
+}
+#footer .footer_l p{
+    text-align: center;
+}
+/*푸터 오른쪽*/
+#footer .footer_r{
+    width:30%;
+    margin-left:100px;
+    margin-top:60px;
+}
+#footer .footer_r p{
+    position: relative;
+    font-weight: bold;
+}
+#footer .footer_r p::after{
+    content:"";
+    width:500px;
+    height: 2px;
+    position: absolute;
+    top:45px;
+    left:0;
+    background-color:#5b5b5b;
+}
+#footer .footer_r ul{
+    margin-top:20px;
+}
+#footer .footer_r li{
+    height:50px;
+    margin-right:50px;
+}

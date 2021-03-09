@@ -2,413 +2,575 @@
  <html lang="ko">
 
  <head>
-     <meta charset="UTF-8">
-     <title>전주연 웹 포트폴리오</title>
-
-     <!--파비콘-->
-     <link rel="shortcut icon" href="./img/logo/logo_30px.png">
-
-     <!--제이쿼리-->
-     <script src="./js/jquery-3.5.1.min.js"></script>
-
-     <!--웹폰트, 폰트어썸, 제이쿼리 플러그인들 자리-->
-     <script src="./js/slick.js"></script>
-     <link rel="stylesheet" href="./css/slick.css">
-     <link rel="stylesheet" href="./css/slick-theme.css">
-
-     <!-- 구글 폰트 불러오기 -->
-     <!-- rotobo(400/700/900), notosanskr(400/600/900) -->
-     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-
-     <!--내가 만든 링크-->
-     <link rel="stylesheet" href="./css/style.css">
-     <script src="./js/script.js"></script>
-
-
- </head>
-
- <body>
-     <div id="main_wrap">
-
-         <!--헤더-->
-         <header id="header" class="con flex">
-
-             <!--로고-->
-             <div class="logo_box flex">
-                 <a href="#home" class="flex flex-ai-c logo img-box">
-                     <img src="./img/logo/main_logo.png" alt="no">
-                 </a>
-             </div>
-
-             <div class="flex-grow-1"></div>
-
-             <!--메뉴-->
-             <nav class="menu_bar">
-                 <div class="manu_bg"></div>
-                 <ul class="flex flex-jc-e">
-                     <li class="on"><a href="#home" class="flex flex-ai-c height-100p">Home</a></li>
-                     <li><a href="#about_me" class="flex flex-ai-c height-100p">About Me</a></li>
-                     <li><a href="#works" class="flex flex-ai-c height-100p">Works</a></li>
-                     <li><a href="#contact" class="flex flex-ai-c height-100p">Contact</a></li>
-                 </ul>
-             </nav>
-         </header>
-
-         <!--페이지 콘텐츠-->
-         <div id="contents">
-
-             <!--홈-->
-             <section id="home" class="con-min-width">
-
-                 <div class="con">
-                     <!--나의 장점-->
-                     <div class="advantage">
-                         <ul class="ad_line flex">
-                             <li class="flex flex-ai-c">#디자인</li>
-                             <li class="flex flex-ai-c">#퍼블리셔</li>
-                             <li class="flex flex-ai-c">#침착한</li>
-                             <li class="ad_point">#차분한</li>
-                         </ul>
-                         <ul class="ad_line flex">
-                             <li class="flex flex-ai-c">#끈기있는</li>
-                             <li class="ad_point">#꼼꼼한</li>
-                             <li class="flex flex-ai-c">#긍정적</li>
-                             <li class="flex flex-ai-c">#감각적</li>
-                         </ul>
-                         <ul class="ad_line flex">
-                             <li class="ad_point">#센스있는</li>
-                             <li class="flex flex-ai-c">#소통이 원활한</li>
-                             <li class="ad_point">#협업</li>
-                         </ul>
-                     </div>
-
-                     <!--이미지 모음-->
-                     <div class="img_group">
-
-                         <!--동그라미 이미지-->
-                         <div class="circle_2 img-box">
-                             <img src="./img/home/circle_2.png" alt="no">
-                         </div>
-
-                         <!--메인 이미지-->
-                         <div class="main_img img-box">
-                             <img src="./img/home/main_img.jpg" alt="no">
-                         </div>
-
-                         <!--점 사각형 이미지-->
-                         <div class="circle_box img-box">
-                             <img src="./img/home/circle_box.png" alt="no">
-                         </div>
-
-                         <!--이름로고박스 이미지-->
-                         <div class="logo_box img-box">
-                             <img src="./img/home/namelogo_box.png" alt="no">
-                         </div>
-                     </div>
-
-                 </div>
-                 <!--파란 선-->
-                 <div class="blue_line"></div>
-
-             </section>
-
-             <!--어바웃미-->
-             <section id="about_me" class="con-min-width">
-                 <div class="con">
-                     <!--내소개-->
-                     <div class="am_box intro flex">
-
-                         <p class="intro_1">Introduce</p>
-
-                         <div class="intro_2 flex">
-
-                             <!--캐릭터 일러스트-->
-                             <div class="img-box my_character">
-                                 <img src="./img/about_me/my_character.png" alt="no">
-                             </div>
-
-                             <!--소개글-->
-                             <div class="intro_txt">
-
-                                 <div class="txt1 flex flex-ai-c flex-jc-e">
-                                     <h2>Design + Publisher</h2>
-                                     <p>디자인도 퍼블리싱도 둘 다 좋다!</p>
-                                 </div>
-
-                                 <div class="txt2">
-                                     <div class="name flex">
-                                         <h1>전주연</h1>
-                                         <p class="flex flex-ai-fe">Jeon juyeon</p>
-                                     </div>
-
-                                     <!--세부소개-->
-                                     <ul class="name flex">
-                                         <li>
-                                             <p>소개</p>
-                                             <ul>
-                                                 <li>1995.11.02 (만 26세)</li>
-                                                 <li>010.9941.5798</li>
-                                                 <li>flffldks0509@gmail.com</li>
-                                             </ul>
-                                         </li>
-                                         <li>
-                                             <p>자격 취득 정보</p>
-                                             <ul>
-                                                 <li>- GTQ포토샵</li>
-                                                 <li>- ACA포토샵</li>
-                                                 <li>- 웹디자인기능사</li>
-                                             </ul>
-                                         </li>
-                                         <li>
-                                             <p>프로그램</p>
-                                             <ul class="icon flex">
-                                                 <li><img src="./img/about_me/ps.png" alt="no"></li>
-                                                 <li><img src="./img/about_me/ai.png" alt="no"></li>
-                                                 <li><img src="./img/about_me/Brackets.png" alt="no"></li>
-                                             </ul>
-                                             <ul class="icon flex">
-                                                 <li><img src="./img/about_me/html.png" alt="no"></li>
-                                                 <li><img src="./img/about_me/css.png" alt="no"></li>
-                                                 <li><img src="./img/about_me/js.png" alt="no"></li>
-                                                 <li><img src="./img/about_me/jq.png" alt="no"></li>
-                                             </ul>
-                                         </li>
-                                     </ul>
+    <meta charset="UTF-8">
+    <title>전주연 웹 포트폴리오</title>
+
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./img/logo/logo_30px.png">
+
+    <!--제이쿼리-->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+
+    <!--웹폰트, 폰트어썸, 제이쿼리 플러그인들 자리-->
+    <script src="./js/slick.js"></script>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+
+    <!-- 구글 폰트 불러오기 -->
+    <!-- rotobo(400/700/900), notosanskr(400/600/900) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!--내가 만든 링크-->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+
+
+</head>
+
+<body>
+    <div id="main_wrap">
+
+        <!--헤더-->
+        <header id="header" class="con flex">
+
+            <!--로고-->
+            <div class="logo_box flex">
+                <a href="#home" class="flex flex-ai-c logo img-box">
+                    <img src="./img/logo/main_logo.png" alt="no">
+                </a>
+            </div>
+
+            <div class="flex-grow-1"></div>
+
+            <!--메뉴-->
+            <nav class="menu_bar">
+                <div class="manu_bg"></div>
+                <ul class="flex flex-jc-e">
+                    <li class="on"><a href="#home" class="flex flex-ai-c height-100p">Home</a></li>
+                    <li><a href="#about_me" class="flex flex-ai-c height-100p">About Me</a></li>
+                    <li><a href="#works" class="flex flex-ai-c height-100p">Works</a></li>
+                    <li><a href="#contact" class="flex flex-ai-c height-100p">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--페이지 콘텐츠-->
+        <div id="contents">
+
+            <!--홈-->
+            <section id="home" class="con-min-width">
+
+                <div class="con">
+                    <!--나의 장점-->
+                    <div class="advantage">
+                        <ul class="ad_line flex">
+                            <li class="flex flex-ai-c">#디자인</li>
+                            <li class="flex flex-ai-c">#퍼블리셔</li>
+                            <li class="flex flex-ai-c">#침착한</li>
+                            <li class="ad_point">#차분한</li>
+                        </ul>
+                        <ul class="ad_line flex">
+                            <li class="flex flex-ai-c">#끈기있는</li>
+                            <li class="ad_point">#꼼꼼한</li>
+                            <li class="flex flex-ai-c">#긍정적</li>
+                            <li class="flex flex-ai-c">#감각적</li>
+                        </ul>
+                        <ul class="ad_line flex">
+                            <li class="ad_point">#센스있는</li>
+                            <li class="flex flex-ai-c">#소통이 원활한</li>
+                            <li class="ad_point">#협업</li>
+                        </ul>
+                    </div>
+
+                    <!--이미지 모음-->
+                    <div class="img_group">
+
+                        <!--동그라미 이미지-->
+                        <div class="circle_2 img-box">
+                            <img src="./img/home/circle_2.png" alt="no">
+                        </div>
+
+                        <!--메인 이미지-->
+                        <div class="main_img img-box">
+                            <img src="./img/home/main_img.jpg" alt="no">
+                        </div>
+
+                        <!--점 사각형 이미지-->
+                        <div class="circle_box img-box">
+                            <img src="./img/home/circle_box.png" alt="no">
+                        </div>
+
+                        <!--이름로고박스 이미지-->
+                        <div class="logo_box img-box">
+                            <img src="./img/home/namelogo_box.png" alt="no">
+                        </div>
+                    </div>
+
+                </div>
+                <!--파란 선-->
+                <div class="blue_line"></div>
+
+            </section>
+
+            <!--어바웃미-->
+            <section id="about_me" class="con-min-width">
+                <div class="con">
+                    <!--내소개-->
+                    <div class="am_box intro flex">
+
+                        <p class="intro_1">Introduce</p>
+
+                        <div class="intro_2 flex">
+
+                            <!--캐릭터 일러스트-->
+                            <div class="img-box my_character">
+                                <img src="./img/about_me/my_character.png" alt="no">
+                            </div>
+
+                            <!--소개글-->
+                            <div class="intro_txt">
+
+                                <div class="txt1 flex flex-ai-c flex-jc-e">
+                                    <h2>Design + Publisher</h2>
+                                    <p>디자인도 퍼블리싱도 둘 다 좋다!</p>
+                                </div>
+
+                                <div class="txt2">
+                                    <div class="name flex">
+                                        <h1>전주연</h1>
+                                        <p class="flex flex-ai-fe">Jeon juyeon</p>
+                                    </div>
+
+                                    <!--세부소개-->
+                                    <ul class="name flex">
+                                        <li>
+                                            <p>소개</p>
+                                            <ul>
+                                                <li>1995.11.02 (만 26세)</li>
+                                                <li>010.9941.5798</li>
+                                                <li>flffldks0509@gmail.com</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>자격 취득 정보</p>
+                                            <ul>
+                                                <li>- ACA일러스트</li>
+                                                <li>- ACA포토샵</li>
+                                                <li>- 웹디자인기능사</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>프로그램</p>
+                                            <ul class="icon flex">
+                                                <li><img src="./img/about_me/ps.png" alt="no"></li>
+                                                <li><img src="./img/about_me/ai.png" alt="no"></li>
+                                                <li><img src="./img/about_me/Brackets.png" alt="no"></li>
+                                            </ul>
+                                            <ul class="icon flex">
+                                                <li><img src="./img/about_me/html.png" alt="no"></li>
+                                                <li><img src="./img/about_me/css.png" alt="no"></li>
+                                                <li><img src="./img/about_me/js.png" alt="no"></li>
+                                                <li><img src="./img/about_me/jq.png" alt="no"></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
 
-                                     <!--자기소개-->
+                                    <!--자기소개-->
 
-                                     <p class="my_intro name">안녕하세요! 제 이름은 <b>전주연</b> 입니다. 만나서 반갑습니다.
-                                         <br>늘 차분하고 책임감 있는 <b>디자이너</b> 겸 <b>퍼블리셔</b> 가 되겠습니다.
-                                     </p>
-
-                                 </div>
+                                    <p class="my_intro name">안녕하세요! 제 이름은 <b>전주연</b> 입니다. 만나서 반갑습니다.
+                                        <br>늘 차분하고 책임감 있는 <b>디자이너</b> 겸 <b>퍼블리셔</b> 가 되겠습니다.
+                                    </p>
+
+                                </div>
 
-
-                             </div>
-                         </div>
-
-                     </div>
-                     <!--주연 이름 글자-->
-                     <div class="name_img">
-                         <img src="./img/about_me/name_img.png" alt="no">
-                     </div>
-
-                     <!--포인트-->
-                     <div class="am_box point flex">
-
-                         <p class="intro_1">Point</p>
-
-                         <div class="intro_2">
-                             <div class="img-box circle4">
-                                 <img src="./img/about_me/circle4.png" alt="no">
-                             </div>
-
-                             <div class="point_txt flex">
-                                 <ul class="b_txt">
-                                     <li class="flex flex-ai-c">#차분한</li>
-                                     <li class="flex flex-ai-c">#꼼꼼한</li>
-                                     <li class="flex flex-ai-c">#센스있는</li>
-                                     <li class="flex flex-ai-c">#협업</li>
-
-                                 </ul>
-                                 <ul class="m_txt">
-                                     <li class="flex flex-ai-c">늘 차분하고 침착하게 흔들림 없이 일하겠습니다.</li>
-                                     <li class="flex flex-ai-c">언제나 꼼꼼하고 책임감 있게 맡은 바에 최선을 다하겠습니다</li>
-                                     <li class="flex flex-ai-c">센스있고 감각적인 디자인을 보여드리겠습니다.</li>
-                                     <li class="flex flex-ai-c">모두와 소통하며 귀 기울이는 자세로 임하겠습니다.</li>
-
-                                 </ul>
-                             </div>
-
-
-
-
-
-                         </div>
-
-                     </div>
-                     <!--원 뒤 파란선-->
-                     <div class="blue_line"></div>
-
-                 </div>
-
-
-             </section>
-
-             <!--웍스/작업물-->
-             <section id="works" class="con-min-width">
-
-                 <div class="con">
-
-                     <!--웹작업물-->
-                     <div class="web_works works_box">
-
-
-                         <!--웹 작업물 글씨-->
-                         <div class="works_txt">
-                             <h3><strong>WEB</strong>project</h3>
-                             <p>웹디자인과 퍼블리싱 진행 프로젝트</p>
-                         </div>
-
-
-
-                         <div class="works_slide">
-
-                             <!--커피니 슬라이드-->
-                             <div class="slider_content">
-                                 <div class="works_box flex flex-ai-c flex-jc-c">
-
-                                     <!--이미지-->
-                                     <div class="img-box">
-                                         <img src="./img/works/coffeenie_mockup.jpg" alt="no">
-                                     </div>
-
-                                     <!--텍스트-->
-                                     <div class="txt_box">
-                                         <h2>커피니 웹사이트 리뉴얼 디자인 </h2>
-                                         <h3>COFFEENIE Website Renewal Design</h3>
-
-                                         <div class="tb_sub1 flex">
-                                             <ul>
-                                                 <li class="flex flex-ai-c">사용 프로그램</li>
-                                                 <li class="flex flex-ai-c">참여도</li>
-                                                 <li class="flex flex-ai-c">구성</li>
-                                             </ul>
-
-                                             <ul>
-                                                 <li class="flex flex-ai-c">Photoshop, Illustraion, Brackets</li>
-                                                 <li class="flex flex-ai-c">디자인100%, 퍼블리싱 100%</li>
-                                                 <li class="flex flex-ai-c">Main page</li>
-                                             </ul>
-                                         </div>
-
-                                         <div class="tb_sub2">
-                                             <h4>Check Point</h4>
-                                             <ul>
-                                                 <li class="flex flex-ai-c">
-                                                     <p>이미지슬라이드 100% 넒히기</p>
-                                                 </li>
-                                                 <li class="flex flex-ai-c">
-                                                     <p>슬라이드 메뉴 이벤트 변경</p>
-                                                 </li>
-                                                 <li class="flex flex-ai-c">
-                                                     <p>모바일 페이지와 같도록 IA 재구성</p>
-                                                 </li>
-                                             </ul>
-                                         </div>
-
-                                         <a class="btn_go" href="./web_pf/coffeenie/index.html">사이트 바로가기</a>
-                                         <a class="btn_go" href="https://drive.google.com/file/d/1p0qqZfmUCgJWHzEPj0NXCSFQeEXFk2bh/view?usp=sharing">기획서 보기</a>
-
-                                     </div>
-                                 </div>
-
-                             </div>
-                             <!--한미의학 슬라이드-->
-                             <div class="slider_content">
-                                 <div class="works_box flex flex-ai-c flex-jc-c">
-
-                                     <!--이미지-->
-                                     <div class="img-box">
-                                         <img src="./img/works/hanmibook_mockup.jpg" alt="no">
-                                     </div>
-
-                                     <!--텍스트-->
-                                     <div class="txt_box">
-                                         <h2>한미의학 웹사이트 리뉴얼 디자인 </h2>
-                                         <h3>Hanmibooks Website Renewal Design</h3>
-
-                                         <div class="tb_sub1 flex">
-                                             <ul>
-                                                 <li class="flex flex-ai-c">사용 프로그램</li>
-                                                 <li class="flex flex-ai-c">참여도</li>
-                                                 <li class="flex flex-ai-c">구성</li>
-                                             </ul>
-
-                                             <ul>
-                                                 <li class="flex flex-ai-c">Photoshop, Illustraion, Brackets</li>
-                                                 <li class="flex flex-ai-c">디자인100%, 퍼블리싱 100%</li>
-                                                 <li class="flex flex-ai-c">Main page</li>
-                                             </ul>
-                                         </div>
-
-                                         <div class="tb_sub2">
-                                             <h4>Check Point</h4>
-                                             <ul>
-                                                 <li class="flex flex-ai-c">
-                                                     <p>GIF 삭제</p>
-                                                 </li>
-                                                 <li class="flex flex-ai-c">
-                                                     <p>IA 재구성</p>
-                                                 </li>
-                                                 <li class="flex flex-ai-c">
-                                                     <p>신간도서와 베스트셀러는 이미지 슬라이드로 구현</p>
-                                                 </li>
-                                             </ul>
-                                         </div>
-
-                                         <a class="btn_go" href="./web_pf/hanmibook/index.html">사이트 바로가기</a>
-                                         <a class="btn_go" href="https://drive.google.com/file/d/1RyMG_9Qozhnhc3qMkb_1oiqUP-XZX-tZ/view?usp=sharing">기획서 보기</a>
-
-                                     </div>
-                                 </div>
-
-                             </div>
-
-                         </div>
-
-
-
-
-                     </div>
-
-                     <!--
-                 그외 디자인 작업물
-                 <div class="etc_works works_box"></div>
--->
-
-                 </div>
-
-             </section>
-
-             <!--컨택트-->
-             <section id="contact" class="con-min-width">
-                 <div class="con">
-                     <!--캐릭터 이미지-->
-                     <div class="ch_img img-box">
-                         <img src="./img/contact/character.png" alt="no">
-                     </div>
-                     <!--이름-->
-                     <div class="name_txt">
-                         <h2>전주연</h2>
-                         <p>Jeon ju yeon</p>
-                     </div>
-
-                     <!--로고 라인 이미지-->
-                     <div class="logo_line img-box">
-                         <img src="./img/contact/logo_line.png" alt="no">
-                     </div>
-
-                     <!--연락처 박스-->
-                     <div class="ct_box flex flex-jc-c">
-                         <ul class="ct_txt1">
-                             <li class="flex flex-ai-c">Phone.</li>
-                             <li class="flex flex-ai-c">Kakao ID.</li>
-                             <li class="flex flex-ai-c">Mail.</li>
-                         </ul>
-                         <ul class="ct_txt2">
-                             <li class="flex flex-ai-c">010.9941.5798</li>
-                             <li class="flex flex-ai-c">marina0626</li>
-                             <li class="flex flex-ai-c">flffldks0509@gmail.com</li>
-                         </ul>
-                     </div>
-
-                 </div>
-
-             </section>
-         </div>
-
-     </div>
- </body>
-
- </html>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--주연 이름 글자-->
+                    <div class="name_img">
+                        <img src="./img/about_me/name_img.png" alt="no">
+                    </div>
+
+                    <!--포인트-->
+                    <div class="am_box point flex">
+
+                        <p class="intro_1">Point</p>
+
+                        <div class="intro_2">
+                            <div class="img-box circle4">
+                                <img src="./img/about_me/circle4.png" alt="no">
+                            </div>
+
+                            <div class="point_txt flex">
+                                <ul class="b_txt">
+                                    <li class="flex flex-ai-c">#차분한</li>
+                                    <li class="flex flex-ai-c">#꼼꼼한</li>
+                                    <li class="flex flex-ai-c">#센스있는</li>
+                                    <li class="flex flex-ai-c">#협업</li>
+
+                                </ul>
+                                <ul class="m_txt">
+                                    <li class="flex flex-ai-c">늘 차분하고 침착하게 흔들림 없이 일하겠습니다.</li>
+                                    <li class="flex flex-ai-c">언제나 꼼꼼하고 책임감 있게 맡은 바에 최선을 다하겠습니다</li>
+                                    <li class="flex flex-ai-c">센스있고 감각적인 디자인을 보여드리겠습니다.</li>
+                                    <li class="flex flex-ai-c">모두와 소통하며 귀 기울이는 자세로 임하겠습니다.</li>
+
+                                </ul>
+                            </div>
+
+
+
+
+
+                        </div>
+
+                    </div>
+                    <!--원 뒤 파란선-->
+                    <div class="blue_line"></div>
+
+                </div>
+
+
+            </section>
+
+            <!--웍스/작업물-->
+            <section id="works" class="con-min-width">
+
+                <div class="con">
+
+
+                    <!-- 웹 작업물-->
+                    <div class="web_works works_con">
+
+
+                        <!--웹 작업물 글씨-->
+                        <div class="works_txt flex flex-ai-c">
+                            <h3 class="flex flex-ai-c height-100p">WEB project</h3>
+                            <p class="flex flex-ai-c height-100p">웹 디자인 + 퍼블리싱 진행 프로젝트</p>
+                        </div>
+
+
+                        <div class="works_slide">
+
+                            <!--커피니 슬라이드-->
+                            <div class="slider_content">
+                                <div class="works_box flex flex-ai-c flex-jc-c">
+
+                                    <!--이미지-->
+                                    <div class="img-box">
+                                        <img src="./img/works/coffeenie_mockup.jpg" alt="no">
+                                    </div>
+
+                                    <!--텍스트-->
+                                    <div class="txt_box">
+                                        <h2>커피니 웹사이트 리뉴얼 디자인 </h2>
+                                        <h3>COFFEENIE Website Renewal Design</h3>
+
+                                        <div class="tb_sub1 flex">
+                                            <ul>
+                                                <li class="flex flex-ai-c">사용 프로그램</li>
+                                                <li class="flex flex-ai-c">참여도</li>
+                                                <li class="flex flex-ai-c">구성</li>
+                                            </ul>
+
+                                            <ul>
+                                                <li class="flex flex-ai-c">Photoshop, Illustraion, Brackets</li>
+                                                <li class="flex flex-ai-c">디자인100%, 퍼블리싱 100%</li>
+                                                <li class="flex flex-ai-c">Main page</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tb_sub2">
+                                            <h4>Check Point</h4>
+                                            <ul>
+                                                <li class="flex flex-ai-c">
+                                                    <p>이미지슬라이드 100% 넒히기</p>
+                                                </li>
+                                                <li class="flex flex-ai-c">
+                                                    <p>슬라이드 메뉴 이벤트 변경</p>
+                                                </li>
+                                                <li class="flex flex-ai-c">
+                                                    <p>모바일 페이지와 같도록 IA 통일</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <a class="btn_go" href="./web_pf/coffeenie/index.html" target="_blank">사이트 바로가기</a>
+                                        <a class="btn_go" href="./pj_doc/doc_cof/index.html">기획서 보기</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!--한미의학 슬라이드-->
+                            <div class="slider_content">
+                                <div class="works_box flex flex-ai-c flex-jc-c">
+
+                                    <!--이미지-->
+                                    <div class="img-box">
+                                        <img src="./img/works/hanmibook_mockup.jpg" alt="no">
+                                    </div>
+
+                                    <!--텍스트-->
+                                    <div class="txt_box">
+                                        <h2>한미의학 웹사이트 리뉴얼 디자인 </h2>
+                                        <h3>Hanmibook Website Renewal Design</h3>
+
+                                        <div class="tb_sub1 flex">
+                                            <ul>
+                                                <li class="flex flex-ai-c">사용 프로그램</li>
+                                                <li class="flex flex-ai-c">참여도</li>
+                                                <li class="flex flex-ai-c">구성</li>
+                                            </ul>
+
+                                            <ul>
+                                                <li class="flex flex-ai-c">Photoshop, Illustraion, Brackets</li>
+                                                <li class="flex flex-ai-c">디자인100%, 퍼블리싱 100%</li>
+                                                <li class="flex flex-ai-c">Main page</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tb_sub2">
+                                            <h4>Check Point</h4>
+                                            <ul>
+                                                <li class="flex flex-ai-c">
+                                                    <p>GIF 삭제</p>
+                                                </li>
+                                                <li class="flex flex-ai-c">
+                                                    <p>IA 재구성</p>
+                                                </li>
+                                                <li class="flex flex-ai-c">
+                                                    <p>신간도서,베스트셀러 슬라이드로 구현</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <a class="btn_go" href="./web_pf/hanmibook/index.html" target="_blank">사이트 바로가기</a>
+                                        <a class="btn_go" href="./pj_doc/doc_han/index.html">기획서 보기</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!--콩드슈 슬라이드-->
+                            <div class="slider_content">
+                                <div class="works_box flex flex-ai-c flex-jc-c">
+
+                                    <!--이미지-->
+                                    <div class="img-box">
+                                        <img src="./img/works/kong_mockup2.jpg" alt="no">
+                                    </div>
+
+                                    <!--텍스트-->
+                                    <div class="txt_box">
+                                        <h2>콩드슈 웹사이트 리뉴얼 디자인 </h2>
+                                        <h3>Kongdeshu Website Renewal Design</h3>
+
+                                        <div class="tb_sub1 flex">
+                                            <ul>
+                                                <li class="flex flex-ai-c">사용 프로그램</li>
+                                                <li class="flex flex-ai-c">참여도</li>
+                                                <li class="flex flex-ai-c">구성</li>
+                                            </ul>
+
+                                            <ul>
+                                                <li class="flex flex-ai-c">Photoshop, Illustraion, Brackets</li>
+                                                <li class="flex flex-ai-c">디자인100%, 퍼블리싱 100%</li>
+                                                <li class="flex flex-ai-c">Main page</li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="tb_sub2">
+                                            <h4>Check Point</h4>
+                                            <ul>
+                                                <li class="flex flex-ai-c">
+                                                    <p>원페이지형 웹사이트 디자인</p>
+                                                </li>
+                                                <li class="flex flex-ai-c">
+                                                    <p>제품사진 슬라이드</p>
+                                                </li>
+                                                <li class="flex flex-ai-c">
+                                                    <p>스토어 바로가기 링크 만들기</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <a class="btn_go" href="./web_pf/kongdeshu/index.html" target="_blank">사이트 바로가기</a>
+                                        <a class="btn_go" href="./pj_doc/doc_kon/index.html">기획서 보기</a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="all_con">
+                            <h4>포트폴리오 전체 보기</h4>
+
+                        </div>
+                        <div class="wb_con flex">
+
+                            <!--커피니 박스-->
+                            <a href="pj_doc/doc_cof/index.html" class="wb_box">
+
+                                <div class="wb_go_site">
+                                    <h3>기획서 바로가기</h3>
+                                </div>
+
+                                <div class="img-box">
+                                    <img src="./img/works/coffeenie_mockup.jpg" alt="no">
+                                </div>
+                                <p>커피니 웹디자인 리뉴얼 프로젝트</p>
+                            </a>
+
+                            <!--한미북스 박스-->
+                            <a href="pj_doc/doc_han/index.html" class="wb_box">
+
+                                <div class="wb_go_site">
+                                    <h3>기획서 바로가기</h3>
+                                </div>
+
+                                <div class="img-box">
+                                    <img src="./img/works/hanmibook_mockup.jpg" alt="no">
+                                </div>
+                                <p>한미의학 웹디자인 리뉴얼 프로젝트</p>
+                            </a>
+
+                            <!--콩드슈 박스-->
+                            <a href="pj_doc/doc_kon/index.html" class="wb_box">
+
+                                <div class="wb_go_site">
+                                    <h3>기획서 바로가기</h3>
+                                </div>
+
+                                <div class="img-box">
+                                    <img src="./img/works/kong_mockup2.jpg" alt="no">
+                                </div>
+                                <p>콩드슈 웹디자인 리뉴얼 프로젝트</p>
+                            </a>
+
+                            <!--포트폴리오 박스
+                            <a href="#" class="wb_box">
+
+                                <div class="wb_go_site">
+                                    <h3>기획서 바로가기</h3>
+                                </div>
+
+                                <div class="img-box">
+                                    <img src="./img/works/kong_mockup2.jpg" alt="no">
+                                </div>
+                                <p>전주연 포트폴리오 제작 프로젝트</p>
+                            </a>-->
+
+                        </div>
+
+
+                    </div>
+
+                    <!--그외 작업물-->
+                    <div class="etc_works works_con">
+
+
+                        <!--그외 작업물 글씨-->                        
+                        <div class="works_txt flex flex-ai-c">
+                            <h3 class="flex flex-ai-c height-100p">DESIGN project</h3>
+                            <p class="flex flex-ai-c height-100p">그 외 디자인 진행 프로젝트</p>
+                        </div>
+
+
+
+                        <div class="wb_con flex">
+
+                            <!--배너 박스-->
+                            <a href="./pj_doc/d_doc_ban/index.html" class="wb_box">
+
+                                <div class="wb_go_site">
+                                    <h3>기획서 바로가기</h3>
+                                </div>
+
+                                <div class="img-box">
+                                    <img src="./img/works/banner.jpg" alt="no">
+                                </div>
+                                <p>배너 디자인 프로젝트</p>
+                            </a>
+
+                            <!--편집 박스-->
+                            <a href="./pj_doc/d_doc_edt/index.html" class="wb_box">
+
+                                <div class="wb_go_site">
+                                    <h3>기획서 바로가기</h3>
+                                </div>
+
+                                <div class="img-box">
+                                    <img src="./img/works/01.jpg" alt="no">
+                                </div>
+                                <p>편집 디자인 프로젝트</p>
+                            </a>
+
+                            <!--제안서 박스-->
+                            <a href="./pj_doc/d_doc_pro/index.html" class="wb_box">
+
+                                <div class="wb_go_site">
+                                    <h3>기획서 바로가기</h3>
+                                </div>
+
+                                <div class="img-box">
+                                    <img src="./img/works/proposal.jpg" alt="no">
+                                </div>
+                                <p>제안서 디자인 프로젝트</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+            <!--컨택트-->
+            <section id="contact" class="con-min-width">
+                <div class="con">
+                    <!--캐릭터 이미지-->
+                    <div class="ch_img img-box">
+                        <img src="./img/contact/character.png" alt="no">
+                    </div>
+                    <!--이름-->
+                    <div class="name_txt">
+                        <h2>전주연</h2>
+                        <p>Jeon ju yeon</p>
+                    </div>
+
+                    <!--로고 라인 이미지-->
+                    <div class="logo_line img-box">
+                        <img src="./img/contact/logo_line.png" alt="no">
+                    </div>
+
+                    <!--연락처 박스-->
+                    <div class="ct_box flex flex-jc-c">
+                        <ul class="ct_txt1">
+                            <li class="flex flex-ai-c">Phone.</li>
+                            <li class="flex flex-ai-c">Kakao ID.</li>
+                            <li class="flex flex-ai-c">Mail.</li>
+                        </ul>
+                        <ul class="ct_txt2">
+                            <li class="flex flex-ai-c">010.9941.5798</li>
+                            <li class="flex flex-ai-c">marina0626</li>
+                            <li class="flex flex-ai-c">flffldks0509@gmail.com</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+</body></html>
